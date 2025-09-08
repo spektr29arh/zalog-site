@@ -2,21 +2,94 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Поможем деньгами</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { margin: 0; }
+    body {
+      fon-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #2e7d32;
+      padding: 8px 20px;
+    }
+    header img {
+      height: 40px; /* уменьшенный размер */
+      display: block;
+    }
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card p {
+      margin: 10px;
+      font-weight: bold;
+    }
+    .contacts {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contacts a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #2e7d32;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .contacts a:hover {
+      background-color: #1b5e20;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2e7d32;
+      color: white;
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-
-  <!-- Header -->
-<header class="bg-green-700 text-white py-4 shadow-md">
-  <div class="max-w-6xl mx-auto flex items-center">
-    <img src="logo.svg" alt="Поможем деньгами" class="h-12 mr-4">
-  </div>
-</header>
-
+<body>
+  <header>
+    <img src="logo.png" alt="Логотип">
+  </header>
+  
   <!-- Services -->
   <section class="py-10 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl font-semibold text-center mb-8">Принимаем в залог</h2>
