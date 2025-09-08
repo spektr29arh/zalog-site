@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Поможем деньгами</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body { margin: 0; }
   </style>
@@ -11,41 +12,43 @@
 <body class="bg-gray-50 text-gray-900">
 
   <!-- Header -->
-  <header class="bg-green-700 text-white py-4 shadow-md">
-    <div class="max-w-6xl mx-auto flex items-center">
-      <img src="https://iimg.su/i/5JwfsM" alt="Поможем деньгами" class="h-12">
-    </div>
-  </header>
-  
-  <!-- Services -->
-  <section class="py-10 px-4 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-semibold text-center mb-8">Принимаем в залог</h2>
+<header class="bg-green-700 text-white py-4 shadow-md">
+  <div class="max-w-6xl mx-auto flex items-center">
+    <img src="https://s3.iimg.su/s/08/g5JwfsMxLzbuaGjyU45sGlblEEr440Mj20h4QmdE.png" alt="Поможем деньгами" class="h-12 mr-4">
+  </div>
+</header>
 
-    <!-- Cards -->
+  <!-- Services -->
+  <section class="py-10 px-4 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center mb-8" data-aos="fade-up">Принимаем в залог</h2>
+
+    <!-- Cards 2x2 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-      <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+
+      <div class="rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl" data-aos="zoom-in">
         <img src="https://imageio.forbes.com/specials-images/imageserve/6561419a23be15f570052a0b/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?auto=format&fit=crop&w=600&q=80" alt="Недвижимость" class="h-40 w-full object-cover">
         <div class="p-4 text-center font-medium text-lg">Недвижимость</div>
       </div>
 
-      <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+      <div class="rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="100">
         <img src="https://avatars.mds.yandex.net/get-altay/14007310/2a000001955eec6278bfa021aa3ecb05a2ff/XXXL?auto=format&fit=crop&w=600&q=80" alt="Транспорт" class="h-40 w-full object-cover">
         <div class="p-4 text-center font-medium text-lg">Транспорт</div>
       </div>
 
-      <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+      <div class="rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="200">
         <img src="https://mbfinance.ru/wp-content/uploads/2023/03/yuvelirnoe-ukrashenie.jpg?auto=format&fit=crop&w=600&q=80" alt="Золото" class="h-40 w-full object-cover">
         <div class="p-4 text-center font-medium text-lg">Золото</div>
       </div>
 
-      <div class="rounded-2xl overflow-hidden shadow-lg bg-white">
+      <div class="rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="300">
         <img src="https://www.spt.info/sc_images/products/pc_Canon_5d_mk4-lrg-sca1-1000.jpg?auto=format&fit=crop&w=600&q=80" alt="Техника" class="h-40 w-full object-cover">
         <div class="p-4 text-center font-medium text-lg">Техника</div>
       </div>
+
     </div>
 
     <!-- Contacts -->
-    <div class="bg-gray-100 rounded-xl shadow p-6 text-center">
+    <div class="bg-gray-100 rounded-xl shadow p-6 text-center" data-aos="fade-up">
       <h3 class="text-xl font-semibold mb-2">Контакты</h3>
       <p class="mb-2 text-lg">Телефон: 
         <a href="tel:+79522544555" class="underline text-green-700 font-medium">+7-952-254-45-55</a>
@@ -58,7 +61,7 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="bg-green-600 text-white py-8 text-center">
+  <section class="bg-green-600 text-white py-8 text-center" data-aos="fade-up">
     <h2 class="text-xl font-bold mb-2">Получите деньги уже сегодня</h2>
     <p class="mb-4">Простые условия — минимум документов</p>
     <a href="tel:+79522544555" class="bg-white text-green-700 px-4 py-2 rounded-lg shadow hover:bg-gray-200">Оставить заявку</a>
@@ -66,8 +69,16 @@
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-4 text-center text-sm">
-    г. Архангельск, пр. Советских космонавтов, 140, офис 3
+    г. Архангельск, пр. Советских Космонавтов, офис 3
   </footer>
 
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
